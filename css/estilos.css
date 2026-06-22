@@ -53,6 +53,58 @@ body {
     width: 180px;        /* tamaño de la foto */
 }
 
-.Sobre-Mi .columna {
-    width: 35%;                     /* Cada columna ocupa casi la mitad */
+sobre-mi {
+    display: flex;                  /* Dos columnas */
+    justify-content: space-around;  /* Espacio entre columnas */
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.sobre-mi .columna {
+    width: 50%;                     /* Cada columna ocupa casi la mitad */
+}
+
+.Sobre-Mi {
+    text-align: justify;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el bloque del título */
+  padding: 40px 20px;
+}
+
+/* Centra los textos del encabezado */
+.proyectos-texto {
+  text-align: center;
+  max-width: 900px; /* Evita que el texto se estire demasiado a lo ancho */
+  margin-bottom: 40px; /* Separa el texto de las tarjetas */
+}
+
+.proyectos-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas adaptables */
+  gap: 20px; /* Espacio uniforme entre tarjetas */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .redes a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .redes a img {
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
