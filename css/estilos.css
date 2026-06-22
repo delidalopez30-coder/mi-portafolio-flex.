@@ -6,3 +6,53 @@ body {
     color: #333;
     line-height: 2.0;
 }
+
+.header {
+    display: flex;                  /* coloca logo y menú en fila */
+    justify-content: space-between; /* separa logo a la izquierda y menú a la derecha */
+    align-items: center;            /* centra verticalmente */
+    background-color: #1d1c1c;         /* color de fondo */
+    padding: 10px 20px;             /* espacio interno */
+}
+
+/* Logo con imagen + texto */
+.header .logo {
+    display: flex;                  /* imagen y texto en fila */
+    align-items: center;            /* centra verticalmente */
+    font-size: 25px;                /* tamaño de texto del logo */
+    font-weight: bold;              /* texto más grueso */
+    color: white;
+}
+
+.header .logo img {
+    width: 70px;                    /* tamaño del ícono/logo */
+    margin-right: 10px;             /* espacio entre imagen y texto */
+}
+
+/* Menú de navegación */
+.nav a {
+    font-size: 18px;                /* tamaño de letra más grande */
+    color: white;
+    text-decoration: none;          /* quita subrayado */
+    margin: 0 15px;                 /* espacio entre enlaces */
+    transition: color 0.3s;         /* animación suave */
+}
+
+.nav a:hover {
+    color: #40a733;                 /* cambia color al pasar el mouse */
+}
+.hero {
+    text-align: center;
+    padding: 30px 10px;
+    background: linear-gradient(to right, #444b4d, #5b6877);
+    color: white;
+}
+
+/* Configuración de mi foto*/
+.hero .avatar {
+    width: 180px;        /* tamaño de la foto */
+}
+
+.Sobre-Mi .columna {
+    width: 35%;                     /* Cada columna ocupa casi la mitad */
+}
